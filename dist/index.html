@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Тестовое</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="hero">
+        <div class="parallax" id="parallax">
+          <div class="parallax__layer"><img class="parallax__img--01 parallax__img" src="img/parallax/layer-01.png" alt="Квартира"></div>
+          <div class="parallax__layer"><img class="parallax__img--02 parallax__img" src="img/parallax/layer-02.png" alt="Квартира"></div>
+          <div class="parallax__layer"><img class="parallax__img--03 parallax__img" src="img/parallax/layer-03.png" alt="Квартира"></div>
+        </div>
+        <div class="container">
+          <div class="logo"><img src="img/logo_2.png" alt="">
+            <p>Демо-этаж</p>
+          </div>
+          <div class="welcome">
+            <h1>Приходите в гости</h1>
+            <p>И оцение  вашу будующую квартиру: материалы, отделку и то, как будет выглядеть ваша квартира обставленой.</p>
+            <button class="btn" type="button">Записаться на экскурсию</button>
+          </div>
+          <div class="hero__arrow">
+            <button class="hero__arrow-btn" type="button">Листайте вниз</button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="content">
+            <h2>Мы ждем вас</h2>
+            <p>Оставьте заявку или позвоните нам, и наш менеджер назначит вам экскурсию.</p>
+          </div>
+          <ul class="contact-list">
+            <li><a href="tel:+73412601597">+7 (3412) 60-15-97</a></li>
+            <li><a href="#">ул. Лихвинцева, 46  </a></li>
+            <li><a href="mailto:info@rivpark.ru">info@rivpark.ru</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div id="map"></div>
+        <div class="feedback-form">
+          <div class="subtitle">Обратная связь</div>
+          <p class="form-desk">Отправьте заявку. Мы перезвоним и ответим на все вопросы!</p>
+          <form class="form" action="/" method="post" id="form">
+            <div class="form-row">
+              <input class="form__input" type="text" placeholder="Как к вам обращатся" name="name" required>
+              <input class="form__input" type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="form-row">
+              <input class="form__input form__input-tel" type="tel" name="phone" placeholder="Телефон" required>
+            </div>
+            <div class="form-row">
+              <button class="btn" type="submit" name="submit">Отправить</button>
+              <p>Нажимая на кнопку «Отправить», я соглашаюсь с <a class="politic" href="#">политикой обработки персональных данных</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="form__status">Сообщение отправлено
+          <button class="form__status-btn" type="button" name="close">Закрыть</button>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="left-col">
+            <p>© 2017. Французские кварталы «Ривьера Парк»</p>
+            <p>Застройщик: ООО «Регион-инвест». Копирование информации с сайта допускается только со ссылкой на источник. Любая информация представленная на данном сайте, носи исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положением статьи 437 ГК РФ.</p><a class="politic" href="#">Политика в отношении обработки персональных данных </a>
+          </div>
+          <div class="right-col">
+            <p>Разработка сайта</p><a href="http://landau-inc.ru" targrt="_balnk">
+              <svg class="footer-logo">
+                <use xlink:href="img/icons/symbol/sprite.svg#logo-svg"></use>
+              </svg></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKOBY4M-25LwRx54U1wpRQR9tvMeXL558&amp;callback=initMap" type="text/javascript"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

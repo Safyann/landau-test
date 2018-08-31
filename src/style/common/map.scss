@@ -1,0 +1,77 @@
+section {
+  position: relative;
+}
+
+#map {
+  height: 100vh;
+}
+
+.feedback-form {
+  width: 480px;
+  z-index: 100;
+  background: white;
+  padding: 50px 55px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  @include phones {
+    padding: 30px 35px;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.subtitle {
+  color: $grey;
+  font-size: 38px;
+  @include phones {
+    font-size: 20px;
+  }
+}
+
+.form-desk {
+  font-size: 14px;
+  @include phones {
+    font-size: 12px;
+  }
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1;
+    margin-left: 20px;
+  }
+}
+
+.form__input {
+  font-size: 14px;
+  padding: 10px;
+  width: 180px;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+
+  @include phones {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.form__input-tel {
+  width: 100%;
+}
+
+.form__status {
+  display: none;
+}

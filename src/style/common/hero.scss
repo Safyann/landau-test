@@ -1,0 +1,98 @@
+.hero {
+  height: 100vh;
+  display: block;
+  background: url(../img/bg-hero.jpg) center center no-repeat;
+}
+
+.logo {
+  z-index: 100;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+
+  p {
+    border-left: 1px solid $grey;
+    height: 100%;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: $grey;
+    text-transform: uppercase;
+
+    @include phones {
+      font-size: 20px;
+    }
+  }
+
+  @include phones {
+    margin-top: 0;
+  }
+}
+
+.welcome {
+  z-index: 100;
+  width: 35%;
+  @include tablets {
+    width: 50%;
+  }
+  @include phones {
+    width: 100%;
+  }
+}
+
+h1 {
+  color: $grey;
+  font-size: 80px;
+  text-transform: uppercase;
+
+  @include tablets {
+    font-size: 48px;
+  }
+
+  @include phones {
+    font-size: 35px;
+  }
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  @include tablets {
+    font-size: 16px;
+  }
+}
+
+.btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  background: $red;
+  padding: 15px 20px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background: $dark-red;
+    translate: .4s;
+  }
+}
+
+.hero__arrow-btn {
+  display: flex;
+  margin-top: 40px;
+  border: none;
+  background: transparent;
+  font-family: 'Noto Sans', sans-serif;
+  color: #606060;
+  font-size: 14px;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/icons/down.png) center center no-repeat;
+  }
+}

@@ -1,0 +1,15 @@
+section.hero
+  .parallax#parallax
+    - for (var i = 1; i < 4; i++)
+      .parallax__layer
+        img(src=`img/parallax/layer-0${i}.png` alt="Квартира" class = `parallax__img--0${i}`).parallax__img
+  .container
+    .logo
+      img(src="img/logo_2.png", alt="")
+      p Демо-этаж
+    .welcome
+      h1 Приходите в гости
+      p И оцение  вашу будующую квартиру: материалы, отделку и то, как будет выглядеть ваша квартира обставленой.
+      button(type="button").btn Записаться на экскурсию
+    .hero__arrow
+      button(type="button").hero__arrow-btn Листайте вниз

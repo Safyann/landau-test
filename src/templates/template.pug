@@ -1,0 +1,21 @@
+block variables
+
+doctype html
+
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css")
+        link(href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet")
+        link(rel='stylesheet' href='css/main.min.css')
+
+    body
+        block content
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKOBY4M-25LwRx54U1wpRQR9tvMeXL558&callback=initMap" type="text/javascript")
+        script(src="js/main.min.js")
+        

@@ -1,0 +1,17 @@
+section
+  #map
+  .feedback-form
+    .subtitle Обратная связь
+    p.form-desk Отправьте заявку. Мы перезвоним и ответим на все вопросы!
+    form(action="/" method="post").form#form
+      .form-row
+        input.form__input(type="text" placeholder="Как к вам обращатся" name="name" required)
+        input.form__input(type="email" placeholder="Email" name="email" required)
+      .form-row
+        input.form__input.form__input-tel(type="tel" name="phone" placeholder="Телефон" required)
+      .form-row
+        button.btn(type="submit" name="submit") Отправить
+        p Нажимая на кнопку «Отправить», я соглашаюсь с 
+          a(href="#").politic политикой обработки персональных данных
+  .form__status Сообщение отправлено
+    button.form__status-btn(type="button" name="close") Закрыть
